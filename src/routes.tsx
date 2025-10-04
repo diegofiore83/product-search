@@ -1,11 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
-import TeamsPage from './pages/TeamsPage';
+import BooksPage from './pages/BooksPage';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    children: [{ index: true, element: <TeamsPage /> }]
+    children: [{ index: true, element: <BooksPage /> }]
   }
 ]);
