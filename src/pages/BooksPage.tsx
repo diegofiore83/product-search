@@ -22,7 +22,7 @@ export default function ProductsPage() {
       </Typography>
 
       {/* TODO: implement product search considering performance optimization using react best practises */}
-      <TextField placeholder="Search products …" fullWidth size="small" sx={{ mb: 2 }} slotProps={{ input: { 'aria-label': 'Search products' } }} />
+      <TextField placeholder="Search products …" fullWidth size="small" sx={{ mb: 2 }} />
 
       {isLoading && (
         <Box sx={{ display: 'grid', placeItems: 'center', py: 8 }}>

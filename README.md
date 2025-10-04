@@ -1,4 +1,4 @@
-# Senior Frontend Take‑Home
+# Product Exercise
 
 Evaluate problem solving with React + TS, API data, search UX, and performance.
 
@@ -16,24 +16,11 @@ npm i
 npm run dev
 ```
 
-## Your tasks
+## What's already there
 
-1. **Wire up search** over the loaded cards (name + stadium).
-2. Add **debounce** (250–400ms) to reduce re-renders while typing.
-3. Memoize filtering and guard against unnecessary renders.
-4. Sync search to the URL as `?q=...`.
-5. (Optional) Add tests for the hook and filtering logic.
+- Base product card grid loaded and displayed from https://dummyjson.com/products?limit=100
 
-### Hints
+## Goal
 
-- Create `useDebouncedValue`.
-- `useMemo` + `useDeferredValue` can smooth the UI.
-- Keep server data and derived state separate.
-
-### What we’ll look for
-
-- Clean TypeScript types & props
-- Reasonable abstractions (hooks/components)
-- Accessibility (input labeling, keyboard)
-- Performance thinking (debounce, memoization, render keys)
-- Code clarity and comments where helpful
+Add a product search to the existing Products page so users can quickly find items. Do it in a way that minimizes API calls and avoids unnecessary re-renders.
+The search functionality is available here: https://dummyjson.com/products/search?q={string}&limit=${number}
