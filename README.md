@@ -18,7 +18,7 @@ npm run dev
 
 ## What's already there
 
-- Base product card grid loaded and displayed from https://dummyjson.com/products?limit=100
+Base product card grid loaded and displayed from https://dummyjson.com/products?limit=100
 
 ## Goal
 
