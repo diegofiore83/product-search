@@ -16,9 +16,14 @@
     "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "vitest/globals"
+    ]
   },
   "include": [
-    "src"
+    "src",
+    "vite.config.ts",
+    "vitest.config.ts"
   ]
 }
