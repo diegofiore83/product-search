@@ -2,14 +2,8 @@ import { describe, it, expect, vi, afterEach } from 'vitest';
 import { fetchProducts, searchProductsExactTitle } from './api';
 import type { ProductsResponse } from '../types/product';
 
-declare global {
-  // make TS happy about global fetch in Node
-  // eslint-disable-next-line no-var
-  var fetch: typeof fetch;
-}
-
 const mockFetch = vi.fn();
-global.fetch = mockFetch as unknown as typeof fetch;
+globalThis.fetch = mockFetch as unknown as typeof fetch;
 
 afterEach(() => {
   vi.clearAllMocks();
